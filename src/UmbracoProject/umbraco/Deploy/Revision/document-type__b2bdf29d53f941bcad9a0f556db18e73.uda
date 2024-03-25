@@ -8,6 +8,7 @@
   "HistoryCleanup": {},
   "Icon": "icon-application-window-alt color-black",
   "Thumbnail": "folder.png",
+  "Description": "this is blog page",
   "Permissions": {
     "AllowedChildContentTypes": []
   },
