@@ -54,6 +54,7 @@
           "Key": "cc487b38-4671-4654-b1b4-05918d0bfd3b",
           "Alias": "companyName",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "This is company's name",
           "Name": "Company Name"
         }
       ]
