@@ -1,0 +1,14 @@
+{
+  "Name": "Conflict",
+  "Alias": "Conflict",
+  "File": "umb://template-file/Conflict.cshtml",
+  "Udi": "umb://template/0ad36390f14b41008152bbc1a66fb4da",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Conflict.cshtml",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "13.1.0"
+}
