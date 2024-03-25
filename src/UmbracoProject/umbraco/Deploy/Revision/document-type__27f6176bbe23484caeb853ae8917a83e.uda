@@ -1,0 +1,26 @@
+{
+  "Name": "Conflict",
+  "Alias": "conflict",
+  "DefaultTemplate": "umb://template/0ad36390f14b41008152bbc1a66fb4da",
+  "AllowedTemplates": [
+    "umb://template/0ad36390f14b41008152bbc1a66fb4da"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/27f6176bbe23484caeb853ae8917a83e",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/0ad36390f14b41008152bbc1a66fb4da",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}
