@@ -9,6 +9,7 @@
   "Icon": "icon-home color-black",
   "Thumbnail": "folder.png",
   "Permissions": {
+    "AllowedAtRoot": true,
     "AllowedChildContentTypes": []
   },
   "CompositionContentTypes": [],
