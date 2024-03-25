@@ -6,6 +6,12 @@
       "Id": "fd033026-f7a1-4457-b89d-7255e19584cf",
       "Workspaces": [
         {
+          "Id": "a15aab4d-7555-4416-9fdb-f974be5ad9c5",
+          "Name": "Development",
+          "Type": "development",
+          "Url": "https://dev-lancloudtesting.aueast01.umbraco.io"
+        },
+        {
           "Id": "75ffaba8-4fba-41f2-9db0-a11f9f1efaae",
           "Name": "Live",
           "Type": "live",
