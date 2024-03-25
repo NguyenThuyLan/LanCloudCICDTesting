@@ -8,6 +8,7 @@
   "HistoryCleanup": {},
   "Icon": "icon-addressbook color-black",
   "Thumbnail": "folder.png",
+  "Description": "This is group blogs",
   "IsContainer": true,
   "Permissions": {
     "AllowedChildContentTypes": [
