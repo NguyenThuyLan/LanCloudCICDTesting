@@ -4,6 +4,7 @@
 @inject Umbraco.Cms.Web.Common.UmbracoHelper umbracoHelper
 @{
     Layout = "Master.cshtml";
+    var repos = GithubHelper.GetRepositories("umbraco");
 }
 
 
@@ -15,6 +16,11 @@
         <h3>@Model.CompanyAddress</h3>
     </div>
 </div>
+@foreach (var repo in repos)
+{
+    <h1>@repo.FullName</h1>
+    <p>@repo.Description</p>
+}
 <!-- Features Section-->
 <section id="features" class="bg-white">
     <div class="container">
