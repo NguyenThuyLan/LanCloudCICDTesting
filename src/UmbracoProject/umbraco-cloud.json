@@ -1,7 +1,17 @@
 {
   "Deploy": {
     "Project": {
-      "Workspaces": []
+      "Name": "lancloudtesting",
+      "Alias": "lancloudtesting",
+      "Id": "fd033026-f7a1-4457-b89d-7255e19584cf",
+      "Workspaces": [
+        {
+          "Id": "75ffaba8-4fba-41f2-9db0-a11f9f1efaae",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://lancloudtesting.aueast01.umbraco.io"
+        }
+      ]
     },
     "Settings": {}
   },
