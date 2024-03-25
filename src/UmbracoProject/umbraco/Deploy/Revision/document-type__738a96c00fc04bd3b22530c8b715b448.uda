@@ -11,7 +11,8 @@
   "Permissions": {
     "AllowedAtRoot": true,
     "AllowedChildContentTypes": [
-      "umb://document-type/9806ee06599c48618200cadcc8f2e5af"
+      "umb://document-type/9806ee06599c48618200cadcc8f2e5af",
+      "umb://document-type/5c4fe554dd4446e5b2cbc8ed492a7d16"
     ]
   },
   "CompositionContentTypes": [],
@@ -64,6 +65,9 @@
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
       "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/5c4fe554dd4446e5b2cbc8ed492a7d16"
     },
     {
       "Udi": "umb://document-type/9806ee06599c48618200cadcc8f2e5af"
