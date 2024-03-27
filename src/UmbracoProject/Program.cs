@@ -11,7 +11,7 @@ builder.Services.AddHsts(options =>
 {
     options.Preload = true;
     options.IncludeSubDomains = true;
-    options.MaxAge = TimeSpan.FromSeconds(730);
+    options.MaxAge = TimeSpan.FromSeconds(63072000);
     options.ExcludedHosts.Add("example.com");
     options.ExcludedHosts.Add("www.example.com");
 });
