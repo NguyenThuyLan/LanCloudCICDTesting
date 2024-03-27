@@ -7,11 +7,25 @@ builder.CreateUmbracoBuilder()
     .AddComposers()
     .Build();
 
+builder.Services.AddHsts(options =>
+{
+    options.Preload = true;
+    options.IncludeSubDomains = true;
+    options.MaxAge = TimeSpan.FromSeconds(730);
+    options.ExcludedHosts.Add("example.com");
+    options.ExcludedHosts.Add("www.example.com");
+});
+
 WebApplication app = builder.Build();
 
 await app.BootUmbracoAsync();
 
 app.UseHttpsRedirection();
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHsts();
+}
 
 app.UseUmbraco()
     .WithMiddleware(u =>
