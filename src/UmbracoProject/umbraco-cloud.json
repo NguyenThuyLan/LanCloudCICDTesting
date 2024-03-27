@@ -12,6 +12,12 @@
           "Url": "https://dev-lancloudtesting.aueast01.umbraco.io"
         },
         {
+          "Id": "b977b7f6-6433-4b44-a3b9-fb4ad4699906",
+          "Name": "Staging",
+          "Type": "staging",
+          "Url": "https://stage-lancloudtesting.aueast01.umbraco.io"
+        },
+        {
           "Id": "75ffaba8-4fba-41f2-9db0-a11f9f1efaae",
           "Name": "Live",
           "Type": "live",
