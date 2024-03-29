@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<system.webServer>
+		<rewrite>
+			<rules>
+				<rule name="Backoffice IP Filter excluding localhost" enabled="true" stopProcessing="true">
+					<match url="(^umbraco/backoffice/(.*)|^umbraco($|/$))" />
+					<conditions logicalGrouping="MatchAll" trackAllCaptures="false">
+
+						<!-- Don't apply rules on localhost so your local environment still works -->
+						<add input="{HTTP_HOST}" pattern="localhost" negate="true" />
+
+						<!-- Custom IP list -->
+						<add input="{HTTP_X_Forwarded_For}" pattern="192.168.120.111" negate="true" />
+					</conditions>
+					<action type="CustomResponse" statusCode="404" />
+				</rule>
+			</rules>
+		</rewrite>
+	</system.webServer>
+</configuration>

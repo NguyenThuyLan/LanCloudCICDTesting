@@ -1,4 +1,5 @@
 using Joonasw.AspNetCore.SecurityHeaders;
+using Microsoft.AspNetCore.Rewrite;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -87,5 +88,12 @@ app.UseUmbraco()
         u.UseBackOfficeEndpoints();
         u.UseWebsiteEndpoints();
     });
+//using(StreamReader iisUrlRewriteStreamReader = File.OpenText("Rewrite.xml"))
+//{
+//    var options = new RewriteOptions()
+//    .AddIISUrlRewrite(iisUrlRewriteStreamReader);
+//    app.UseRewriter(options);
+//    app.UseDeveloperExceptionPage();
+//}
 
 await app.RunAsync();
