@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\TwoFactorProviders\twoFactorProviderGoogleAuthenticator.html" />
     <Content Include="App_Plugins\UmbracoId\BackOffice\assets\css\style.css" />
     <Content Include="App_Plugins\UmbracoId\BackOffice\custom-login-errors.html" />
     <Content Include="App_Plugins\UmbracoId\BackOffice\UmbracoId.css" />
@@ -26,6 +27,8 @@
     <Content Include="bin\Debug\net8.0\UmbracoProject.staticwebassets.runtime.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app_plugins\twofactorproviders\package.manifest" />
+    <None Include="app_plugins\twofactorproviders\twoFactorProviderGoogleAuthenticator.controller.js" />
     <None Include="App_Plugins\UmbracoId\BackOffice\assets\images\background-login.svg" />
     <None Include="App_Plugins\UmbracoId\BackOffice\assets\images\logo-horizontal.svg" />
     <None Include="App_Plugins\UmbracoId\BackOffice\umbraco-id-ui.js" />
@@ -638,6 +641,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="GoogleAuthenticator" Version="3.2.0" />
     <PackageReference Include="Joonasw.AspNetCore.SecurityHeaders" Version="5.0.0" />
     <PackageReference Include="Umbraco.Cloud.Cms.PublicAccess" Version="13.0.0" />
     <PackageReference Include="Umbraco.Cloud.Identity.Cms" Version="13.0.0" />
